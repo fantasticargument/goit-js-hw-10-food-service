@@ -16,5 +16,12 @@ function createMenu(dishes) {
 }
 
 function changeProfile() {
-    rfs.bodyProfile.classList.add('dark-theme')
+    if (rfs.chekBocsTurner.checked) {
+        rfs.bodyProfile.classList.remove('light-theme')
+        rfs.bodyProfile.classList.add('dark-theme')
+    } else {
+        rfs.bodyProfile.classList.remove('dark-theme')
+        rfs.bodyProfile.classList.add('light-theme')
+    }
+    console.log(rfs.chekBocsTurner.checked)
 }
