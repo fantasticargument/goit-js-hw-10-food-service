@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/fantasticargument/goit-js-hw-10-food-service/issues"
   },
-  "homepage": "https://fantasticargument.github.io/https://fantasticargument.github.io/goit-js-hw-10-food-service",
+  "homepage": "https://fantasticargument.github.io/goit-js-hw-10-food-service",
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
     "parcel-plugin-nuke-dist": "^1.0.1"
