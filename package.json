@@ -22,6 +22,7 @@
   "homepage": "https://fantasticargument.github.io/goit-js-hw-10-food-service",
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
+    "parcel-plugin-handlebars-precompile": "^1.0.2",
     "parcel-plugin-nuke-dist": "^1.0.1"
   },
   "_id": "goit-js-hw-10-food-service@1.0.0",
