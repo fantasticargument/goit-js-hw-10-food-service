@@ -8,10 +8,22 @@ const rfs = {
   bodyTheme: document.querySelector('body'),
 };
 
-rfs.bodyTheme.classList.add(Theme.LIGHT)
-rfs.chekBocsTurner.addEventListener('click', changeProfile);
+const statusCheckBox = localStorage.getItem('chekBocs');
 
-function changeProfile() {
-  rfs.bodyTheme.classList.toggle(Theme.LIGHT)
-  rfs.bodyTheme.classList.toggle(Theme.DARK)
-};
+if (statusCheckBox === 'on') {
+  rfs.chekBocsTurner.checked = true;
+  rfs.bodyTheme.classList.add(Theme.DARK);
+} else {
+  rfs.bodyTheme.classList.add(Theme.LIGHT);
+}
+
+rfs.chekBocsTurner.addEventListener('click', addVAlueLocalStorage);
+
+function addVAlueLocalStorage() {
+  rfs.chekBocsTurner.checked?
+    localStorage.setItem('chekBocs', 'on'):
+    localStorage.setItem('chekBocs', 'off');
+  
+  rfs.bodyTheme.classList.toggle(Theme.LIGHT);
+  rfs.bodyTheme.classList.toggle(Theme.DARK);
+}
